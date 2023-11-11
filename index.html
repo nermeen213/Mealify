@@ -14,6 +14,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&family=Alegreya:ital,wght@0,400;0,600;1,400;1,500&family=Amatic+SC:wght@700&family=Cairo&family=Open+Sans:ital@1&family=Roboto+Serif:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+    
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/main.css">
     
@@ -30,6 +31,7 @@
    
     <div class="navbar">
         <div class="container">
+            
             <div class="mealify">
                 <h1>Mealify</h1>
                 
@@ -45,7 +47,7 @@
 
 
             <div class="icon">
-                <i class="fa-solid fa-moon fa-lg" style="color: #212529;"></i>
+                <i  class="fa-solid fa-moon fa-lg" style="color: #212529;" id="darkMode"></i>
             </div>
         </div>
      </div>
@@ -54,15 +56,33 @@
         <div class="container">
             <div class="caption">
                 <div class="text">
-                    <h2>
-                        Enjoy Your Healthy
-                        <br>
-                        Delicious Food
-                    </h2>
-                    <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
-                   
+                    <div>
+                        <h2>
+                            Enjoy Your Healthy
+                            <br>
+                            Delicious Food
+                        </h2>
+                        <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+                       
+                    </div>
+                   <div class=" media">
                     <a class="btn" href="#contact-us">Book a Table</a>
-                    <a  href="https://www.youtube.com/" target="_blank" class="back">  <i class="fa-regular fa-circle-play fa-2xl" style="color: #ce1212;"></i></a>
+                    <div class="bob">
+                        <div class="iconnn">
+                            <a  href="https://www.youtube.com/" target="_blank" class="back">
+                                <i class="fa-sharp fa-solid fa-play" style="color: #000;"></i> 
+                                <!-- <i class="fa-regular fa-circle-play fa-2xl" style="color: #fff;"></i> -->
+                            </a>
+
+                            
+                        </div>
+
+                        
+                    </div><h4 class="fonttt" >watch a video</h4>
+
+                   
+                   </div>
+                   
                 </div>    
                 <div class="image">
                     <img src="./image/hero-img.png" alt="photo">
@@ -329,7 +349,7 @@
                         <div class="icon"><i class="fa-solid fa-share-nodes fa-lg" style="color: #fff;"></i></div>
                         <div class="adress">
                             <h3>Opening Hours</h3>
-                            <p><span class="rrr">Mon-Sat:</span> 11AM - 23PM; <span class="">Sunday</span> : Closed</p>
+                            <p><span class="">Mon-Sat:</span> 11AM - 23PM; <span class="">Sunday</span> : Closed</p>
                         </div>
                     </div>
 
@@ -408,15 +428,35 @@
                 <div class="three">
                     <h3>Get in Touch</h3>
                     <ul>
-                        <li><span><i class="fa-solid fa-location-dot fa-xl" style="color: #ce1212;"></i></span>A108 Adam Street, New York, NY 535022</li>
-                        <li><span><i class="fa-solid fa-envelope fa-xl" style="color: #ce1212;"></i></span><a href="emailto:contact@example.com">contact@example.com</a></li>
-                        <li><span><i class="fa-solid fa-phone fa-xl" style="color: #ce1212;"></i></span><a href="tel:+1 5589 55488 55">+1 5589 55488 55</a></li>
+                        <li><span><i class="fa-solid fa-location-dot fa-xl" ></i></span>A108 Adam Street, New York, NY 535022</li>
+                        <li><span><i class="fa-solid fa-envelope fa-xl"></i></span><a href="emailto:contact@example.com">contact@example.com</a></li>
+                        <li><span><i class="fa-solid fa-phone fa-xl" ></i></span><a href="tel:+1 5589 55488 55">+1 5589 55488 55</a></li>
                     </ul>
                 </div>
             </div>
         </div
 
     </div>
+    <script>
+        var icon =document.getElementById('darkMode');
+        // var icon3 =document.getElementById('icon2');
+        icon.onclick=function(){
+            document.body.classList.toggle('dark-theme')
+            if(document.body.classList.contains('dark-theme')){
+                icon.classList.replace('fa-moon','fa-sun')
+
+
+            }
+            else{
+                icon.classList.replace('fa-sun','fa-moon')
+
+
+            }
+            
+        }
+        
+
+    </script>
     
 </body>
 </html>
