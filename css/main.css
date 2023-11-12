@@ -286,7 +286,7 @@ body:has(.home:target) .home-link {
     animation-name: move;
     animation-duration: .5s;
     animation-delay: .5s;
-    animation-iteration-count: infinite !important;
+    /* animation-iteration-count: infinite !important; */
    
 }
 @keyframes move {
@@ -1049,7 +1049,7 @@ body:has(.home:target) .home-link {
     }
     .navbar  {
         
-        padding: 0 20px;
+        padding: 0 10px;
     }
 
 
